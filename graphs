@@ -20,13 +20,7 @@ ax.hist(guess, bins=bins, label='Machine Predicted', color='powderblue', edgecol
 ax.hist(lephare_ssfr, bins=bins, label='SED fitted values', color='saddlebrown', histtype='step')
 ax.legend(loc='upper right')
 
-#plt.xlabel("Mdust / Mgas (log10)")
-#plt.xlabel("Color Excess (E(B-V))")
-#plt.xlabel("Total Extinction ($A_v$)")
 plt.xlabel("sSFR (log10)")
-
-#plt.xlim(xmax = -6.5)
-
 plt.ylabel("Count")
 
 name='3bandssfr_lephare_hist.png'
