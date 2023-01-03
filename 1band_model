@@ -34,11 +34,6 @@ def model_builder (hp) :
       else :
         x = tf.keras.layers.AveragePooling2D(pool_size=(2,2))(x)
     
-    #if hp.Choice('global_pooling', ['max','avg']) == 'max' :
-      #x = tf.keras.layers.GlobalMaxPooling2D()(x)
-    #else :
-      #x = tf.keras.layers.GlobalAveragePooling2D()(x)
-    
     x = keras.layers.Flatten()(x)
 
     for i in range(hp.Int('dense_layers', 1, 4, default=2)) :
